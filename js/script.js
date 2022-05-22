@@ -19,8 +19,6 @@ function gerar() {
     cop.classList.remove('hide')
     novasenha = pass
 }
-function copy(){
-novasenha.select();
-novasenha.setSelectionRange(0, 99999)
-navigator.clipboard.writeText(novasenha.value)
-}
+snh.addEventListener('click', function copy(){
+navigator.clipboard.writeText(novasenha)
+} )
