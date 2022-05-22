@@ -20,5 +20,7 @@ function gerar() {
     novasenha = pass
 }
 function copy(){
-navigator.clipboard.writeText(novasenha)
+novasenha.select();
+novasenha.setSelectionRange(0, 99999)
+navigator.clipboard.writeText(novasenha.value)
 }
